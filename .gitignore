@@ -11,7 +11,8 @@
 /doc/doc.css
 /rust/**/target
 /user.bazelrc
-
+/build_android*/
+/install_android*/
 /util/bazel-example/bazel-*
 /util/bazel-example/MODULE.bazel.lock
 
