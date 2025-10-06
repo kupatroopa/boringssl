@@ -8,7 +8,7 @@
 set -e
 
 # Configuration
-ANDROID_NDK_ROOT="${ANDROID_NDK_ROOT:-/Users/freeze/Library/Android/sdk/ndk/29.0.13113456}"
+ANDROID_NDK_ROOT="${ANDROID_NDK_ROOT:-/Library/Android/sdk/ndk/29.0.13113456}"
 ANDROID_ABI="${ANDROID_ABI:-arm64-v8a}"
 ANDROID_API_LEVEL="${ANDROID_API_LEVEL:-21}"
 ENABLE_FIPS="${ENABLE_FIPS:-1}"
@@ -23,10 +23,10 @@ if [ ! -d "$ANDROID_NDK_ROOT" ]; then
 fi
 
 # Clone BoringSSL if not present
-if [ ! -d "boringssl" ]; then
-    echo "Cloning BoringSSL..."
-    git clone https://boringssl.googlesource.com/boringssl
-fi
+# if [ ! -d "boringssl" ]; then
+#     echo "Cloning BoringSSL..."
+#     git clone https://boringssl.googlesource.com/boringssl
+# fi
 
 cd boringssl
 
